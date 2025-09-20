@@ -50,6 +50,19 @@ body{
     font-size: 30px;
 }
 
+
+.subtitulo-pagina{
+  animation: pulseAnim 1.2s ease-in-out infinite;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #798C35;
+  font-size: 30px;
+}
+
+@keyframes pulseAnim {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
 .parrafo-objetivo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #798C35;
@@ -144,6 +157,27 @@ body{
         padding-right: 0; 
         margin-top: 1rem; 
     }
+
+    .card {
+    flex-direction: column;      
+    text-align: center;          
+  }
+
+  .card-content {
+    order: 1;   /* primero el contenido (texto) */
+  }
+
+  .card-image {
+    order: 2;   /* después la imagen */
+    max-width: 80%; 
+    margin: 1rem 0;
+  }
+
+  .card-button {
+    order: 3;   /* y hasta abajo el botón */
+    width: 100%; 
+    margin-top: 1rem;
+  }
 }
 
 /* Estilos de navegación */
@@ -207,7 +241,7 @@ nav ul li:last-child a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f8f9f3;        /* color claro */
+  background: #f8f9f3;   
   border-radius: 20px;
   padding: 1.5rem;
   max-width: 700px;
