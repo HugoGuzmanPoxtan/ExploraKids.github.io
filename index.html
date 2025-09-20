@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="imgs/img1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>ExploraKids</title>
 </head>
 <body>
-    <h1>Hola Mundo, esto funciona</h1>
+    <script src="js/script.js"></script>
+    <nav>
+        <ul>
+            <li><a href="#Conocenos">Conocenos</a></li>
+            <li><a href="#Contacto"><i class="fa-solid fa-user"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <div class="header-container">
+        <div class="header-text">
+            <h1 class="titulo">ExploraKids</h1>
+            <h2 class="subtitulo"> ¡Aprender sobre Los Tuxtlas nunca fue tan divertido!</h2>
+            <button class="start-button" onclick="document.getElementById('Objetivo').scrollIntoView({ behavior: 'smooth' });">
+                Comienza
+            </button>
+        </div>
+        <img src="imgs/img1.png" alt="Logo de ExploraKids" class="logo">
+        
+    </div>
+    </main>
+
+    <section id="Objetivo">
+        <h2 class="subtitulo">Objetivo</h2>
+
+    </section>
+
+    <section>
+        <h2 class="subtitulo">Explora y conoce</h2>
+
+    </section>
+
+    <section id="Conocenos"> 
+        <h2 class="subtitulo">Conocenos</h2>
+    </section>
+
+    <footer id="Contacto">
+        <p>&copy; 2025 ExploraKids. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
