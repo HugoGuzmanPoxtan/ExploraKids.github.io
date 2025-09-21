@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    background-color: #F2F2EB;
+}
+
+.titulo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #798C35;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #798C35;
+    font-size: 30px;
+}
+
+/* Estilos de navegación */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 2rem 1rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #798C35;
+}
+
+
+nav ul li:last-child a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F28E13;
+    color: #F2F2EB;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+nav ul li:last-child a:hover {
+    background: #ffab45; 
+}
+
+.footer {
+    text-align: center;
+    height: 100px;
+    background: #ffab45; 
+    color: #F2F2EB;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header-text {
+    flex: 1;
+    padding-left: 5rem; 
+}
+
+.fotoCiudad {
+    width: 400px; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(-60px);
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+
+  .header-container,
+  .content,
+  .content-objetivo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Para los textos */
+  .header-text,
+  .content-text,
+  .content-text-objetivo {
+    padding-left: 0;
+  }
+
+  .parrafo-objetivo {
+    padding-right: 0;
+    margin: auto;
+  }
+
+  /* Para las imágenes */
+  .logo {
+    max-width: 60%; 
+    height: auto;
+  }
+  
+  .img_objetivo {
+        max-width: 60%; 
+        height: auto;
+        padding-right: 0; 
+        margin-top: 1rem; 
+    }
+
+    .fotoCiudad {
+    width: 80%;  
+    transform: translateX(0); 
+    margin-left: 0;
+    }
+}

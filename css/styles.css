@@ -160,21 +160,21 @@ body{
 
     .card {
     flex-direction: column;      
-    text-align: center;          
+    text-align: center;   
   }
 
   .card-content {
-    order: 1;   /* primero el contenido (texto) */
+    order: 1;   
   }
 
   .card-image {
-    order: 2;   /* después la imagen */
+    order: 2; 
     max-width: 80%; 
     margin: 1rem 0;
   }
 
   .card-button {
-    order: 3;   /* y hasta abajo el botón */
+    order: 3;  
     width: 100%; 
     margin-top: 1rem;
   }
@@ -247,6 +247,14 @@ nav ul li:last-child a:hover {
   max-width: 700px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   gap: 1rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card-content {
@@ -295,4 +303,68 @@ nav ul li:last-child a:hover {
   max-width: 250px;
   border-radius: 12px;
   object-fit: cover;
+}
+
+.item1, .item2, .item3 {
+  position: absolute;
+  background-color: transparent;
+  left: calc(50% - (var(--size) / 2));
+  top: calc(50% - (var(--size) / 2));
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+}
+
+.loader .item1 {
+  --size: 90px;
+  animation: size1_1 2.5s infinite alternate;
+  z-index: 1;
+}
+
+.loader .item2 {
+  --size: 60px;
+  animation: size1_2 2.5s infinite alternate;
+  z-index: 2;
+}
+
+.loader .item3 {
+  --size: 30px;
+  animation: size1_3 2.5s infinite alternate;
+  z-index: 3;
+}
+
+@keyframes size1_1 {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_2 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_3 {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
 }
