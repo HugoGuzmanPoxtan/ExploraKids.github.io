@@ -43,3 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleTexto() {
+    const texto = document.getElementById("txtLugar");
+    const btn = document.querySelector(".ver-mas-btn");
+
+    texto.classList.toggle("expandido");
+
+    if (texto.classList.contains("expandido")) {
+      btn.textContent = "Ver menos";
+    } else {
+      btn.textContent = "Ver más";
+    }
+  }

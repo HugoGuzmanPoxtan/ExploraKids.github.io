@@ -13,7 +13,6 @@
   </head>
 
   <body>
-    
     <!-- Loader -->
     <div class="loader">
       <div class="item1"></div>
@@ -22,126 +21,164 @@
     </div>
 
     <!-- Barra de navegacion -->
-     <div class="page-content" style="display:none;">
-    <nav>
-      <ul>
-        <li><a href="#Conocenos">Conocenos</a></li>
-        <li>
-          <a href="#Contacto"><i class="fa-solid fa-user"></i> Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-content" style="display: none">
+      <nav>
+        <ul>
+          <li><a href="#Conocenos">Conocenos</a></li>
+          <li>
+            <a href="#Contacto"><i class="fa-solid fa-user"></i> Contacto</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Contenido principal -->
-    <main>
-      <div class="header-container">
-        <div class="header-text">
-          <h1 class="titulo">ExploraKids</h1>
-          <h2 class="subtitulo-pagina">
-            ¡Aprender sobre Los Tuxtlas nunca fue tan divertido!
-          </h2>
-          <button
-            class="start-button"
-            onclick="document.getElementById('Objetivo').scrollIntoView({ behavior: 'smooth' });"
-          >
-            Comienza
-          </button>
+      <!-- Contenido principal -->
+      <main>
+        <div class="header-container">
+          <div class="header-text">
+            <h1 class="titulo">ExploraKids</h1>
+            <h2 class="subtitulo-pagina">
+              ¡Aprender sobre Los Tuxtlas nunca fue tan divertido!
+            </h2>
+            <button
+              class="start-button"
+              onclick="document.getElementById('Objetivo').scrollIntoView({ behavior: 'smooth' });"
+            >
+              Comienza
+            </button>
+          </div>
+          <img src="imgs/img1.png" alt="Logo de ExploraKids" class="logo" />
         </div>
-        <img src="imgs/img1.png" alt="Logo de ExploraKids" class="logo" />
+      </main>
+
+      <!-- Secciones de contenido -->
+      <div class="content-objetivo">
+        <section id="Objetivo" class="content-text-objetivo">
+          <h2 class="subtitulo">Objetivo</h2>
+          <p class="parrafo-objetivo">
+            “Promover el aprendizaje significativo de niñas y niños mediante
+            contenidos<br />
+            didacticos centrados en el conocimiento, valoracion y preservacion
+            <br />
+            de la region de Los Tuxtlas, Veracruz”
+          </p>
+        </section>
+        <img src="imgs/img2.png" alt="ExploraKids" class="img_objetivo" />
       </div>
-    </main>
 
-    <!-- Secciones de contenido -->
-    <div class="content-objetivo">
-      <section id="Objetivo" class="content-text-objetivo">
-        <h2 class="subtitulo">Objetivo</h2>
-        <p class="parrafo-objetivo">
-          “Promover el aprendizaje significativo de niñas y niños mediante
-          contenidos<br />
-          didacticos centrados en el conocimiento, valoracion y preservacion
-          <br />
-          de la region de Los Tuxtlas, Veracruz”
-        </p>
-      </section>
-      <img src="imgs/img2.png" alt="ExploraKids" class="img_objetivo" />
-    </div>
+      <!-- Seccion de lugares para visitar -->
+      <div class="content">
+        <section class="content-text">
+          <h2 class="subtitulo">Explora y conoce</h2>
+        </section>
+      </div>
 
-    <!-- Seccion de lugares para visitar -->
-    <div class="content">
-      <section class="content-text">
-        <h2 class="subtitulo">Explora y conoce</h2>
-      </section>
-    </div>
-
-    <!-- Santiago Tuxtla -->
-    <div class="cards-container">
-    <div class="card">
-        <div class="card-content">
-        <i class="fa-solid fa-location-dot card-icon"></i>
-        <h3 class="card-title">Santiago Tuxtla</h3>
-        <p class="card-text">
-             El municipio de Santiago Tuxtla se encuentra en el estado de Veracruz, al sureste de México. Es uno de los 212 municipios de la entidad y tiene su ubicación en la zona sur del estado. Su cabecera es la localidad de Santiago Tuxtla. El municipio lo conforman 239 localidades en las cuales habitan 56.427 personas.
-        </p>
-        <button class="card-button" onclick="location.href='santiagoTuxtla.html'">Conoce más</button>
-        </div>
-        <img src="imgs/img3.jpg" alt="Santiago Tuxtla" class="card-image" />
-    </div>
-    </div>
-
-    <!-- San Andres Tuxtla -->
-     <div class="cards-container">
+      <!-- Santiago Tuxtla -->
+      <div class="cards-container">
         <div class="card">
-            <div class="card-content">
+          <div class="card-content">
+            <i class="fa-solid fa-location-dot card-icon"></i>
+            <h3 class="card-title">Santiago Tuxtla</h3>
+            <p class="card-text">
+              El municipio de Santiago Tuxtla se encuentra en el estado de
+              Veracruz, al sureste de México. Es uno de los 212 municipios de la
+              entidad y tiene su ubicación en la zona sur del estado. Su
+              cabecera es la localidad de Santiago Tuxtla. El municipio lo
+              conforman 239 localidades en las cuales habitan 56.427 personas.
+            </p>
+            <button
+              class="card-button"
+              onclick="location.href='santiagoTuxtla.html'"
+            >
+              Conoce más
+            </button>
+          </div>
+          <img src="imgs/img3.jpg" alt="Santiago Tuxtla" class="card-image" />
+        </div>
+      </div>
+
+      <!-- San Andres Tuxtla -->
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-content">
             <i class="fa-solid fa-location-dot card-icon"></i>
             <h3 class="card-title">San Andres Tuxtla</h3>
-            <p class="card-text">            
-            San Andrés Tuxtla es una ciudad y municipio al sur del estado mexicano de Veracruz . Es la ciudad más grande de la región de Los Tuxtlas . Fue fundada tras la erupción del volcán San Martín, que atrajo a la población a este valle a principios de la época colonial.
+            <p class="card-text">
+              San Andrés Tuxtla es una ciudad y municipio al sur del estado
+              mexicano de Veracruz . Es la ciudad más grande de la región de Los
+              Tuxtlas . Fue fundada tras la erupción del volcán San Martín, que
+              atrajo a la población a este valle a principios de la época
+              colonial.
             </p>
-            <button class="card-button" onclick="location.href='sanAndresTuxtla.html'">Conoce más</button>
-            </div>
-            <img src="imgs/img4.jpeg" alt="San Andres Tuxtla" class="card-image" />
+            <button
+              class="card-button"
+              onclick="location.href='sanAndresTuxtla.html'"
+            >
+              Conoce más
+            </button>
+          </div>
+          <img
+            src="imgs/img4.jpeg"
+            alt="San Andres Tuxtla"
+            class="card-image"
+          />
         </div>
-     </div>
+      </div>
 
-     <!-- Catemaco -->
-     <div class="cards-container">
+      <!-- Catemaco -->
+      <div class="cards-container">
         <div class="card">
-            <div class="card-content">
+          <div class="card-content">
             <i class="fa-solid fa-location-dot card-icon"></i>
             <h3 class="card-title">Catemaco</h3>
             <p class="card-text">
-                Catemaco es una ciudad turística de Veracruz, México, famosa por su laguna, su rica biodiversidad y su misticismo, siendo conocida como la "Tierra de los Brujos" por sus tradiciones esotéricas. Ubicada en la región montañosa de Los Tuxtlas, ofrece atracciones naturales como la Laguna de Catemaco con sus islas habitadas por monos y garzas, y parques ecológicos como Nanciyaga, además de una gastronomía basada en especies lacustres. 
+              Catemaco es una ciudad turística de Veracruz, México, famosa por
+              su laguna, su rica biodiversidad y su misticismo, siendo conocida
+              como la "Tierra de los Brujos" por sus tradiciones esotéricas.
+              Ubicada en la región montañosa de Los Tuxtlas, ofrece atracciones
+              naturales como la Laguna de Catemaco con sus islas habitadas por
+              monos y garzas, y parques ecológicos como Nanciyaga, además de una
+              gastronomía basada en especies lacustres.
             </p>
-            <button class="card-button" onclick="location.href='catemaco.html'">Conoce más</button>
-            </div>
-            <img src="imgs/img5.jpg" alt="Catemaco" class="card-image" />
+            <button class="card-button" onclick="location.href='catemaco.html'">
+              Conoce más
+            </button>
+          </div>
+          <img src="imgs/img5.jpg" alt="Catemaco" class="card-image" />
         </div>
-     </div>
+      </div>
 
-    <!-- Conocenos -->
-    <div class="content-objetivo">
-      <section id="Conocenos" class="content-text-objetivo">
-        <h2 class="subtitulo">Conocenos</h2>
+      <!-- Conocenos -->
+      <div class="content-objetivo">
+        <section id="Conocenos" class="content-text-objetivo">
+          <h2 class="subtitulo">Conocenos</h2>
           <p class="parrafo-objetivo">
-          Somos un proyecto educativo creado con amor por la region de Los Tuxtlas, Veracruz. <br> 
-          Nos hemos inspirado en la riqueza natural, cultural e historica de nuestra tierra 
-          para desarrollar un material didactico que fortalezca el aprendizaje significativo y 
-          la identidad regional entre niñas, niños y jovenes.
+            Somos un proyecto educativo creado con amor por la region de Los
+            Tuxtlas, Veracruz. <br />
+            Nos hemos inspirado en la riqueza natural, cultural e historica de
+            nuestra tierra para desarrollar un material didactico que fortalezca
+            el aprendizaje significativo y la identidad regional entre niñas,
+            niños y jovenes.
           </p>
-      </section>
-      <img src="imgs/img6.png" alt="ExploraKids" class="img_objetivo" />
-      </section>
-    </div>
+        </section>
+        <img src="imgs/img6.png" alt="ExploraKids" class="img_objetivo" />
+      </div>
 
-    <!-- Pie de pagina -->
-    <footer id="Contacto" class="footer">
+      <!-- Pie de pagina -->
+      <footer id="Contacto" class="footer">
         <h3>Contactanos</h3>
-            <a href="https://www.facebook.com/share/18pEQV8ity/?mibextid=wwXIfr"><i class="fa-brands fa-facebook fa-2xl" style="color: #f2f2eb;"></i></a>
-            <a href="https://www.instagram.com/explorakids_tuxtlas?igsh=MWowaTV3eHZhb21tcA=="><i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2eb;"></i></a>
-            <a href=" https://wa.me/+522941290562"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #f2f2eb;"></i> </a>
-      <p>&copy; 2025 ExploraKids. Todos los derechos reservados.</p>
-    </footer>
-  </div>
+        <a href="https://www.facebook.com/share/18pEQV8ity/?mibextid=wwXIfr"
+          ><i class="fa-brands fa-facebook fa-2xl" style="color: #f2f2eb"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/explorakids_tuxtlas?igsh=MWowaTV3eHZhb21tcA=="
+          ><i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2eb"></i
+        ></a>
+        <a href=" https://wa.me/+522941290562"
+          ><i class="fa-brands fa-whatsapp fa-2xl" style="color: #f2f2eb"></i>
+        </a>
+        <p>&copy; 2025 ExploraKids. Todos los derechos reservados.</p>
+      </footer>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
